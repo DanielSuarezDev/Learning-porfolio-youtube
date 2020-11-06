@@ -1,0 +1,16 @@
+{
+  "name": "learnin-porfolio-youtube",
+  "version": "1.0.0",
+  "description": "aprendiendo a desarrollar mi portafolio personal",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "html",
+    "css",
+    "javascript"
+  ],
+  "author": "Daniel Suarez",
+  "license": "MIT"
+}
