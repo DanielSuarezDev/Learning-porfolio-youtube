@@ -6,11 +6,12 @@
 
 html {
   font-size: 62.5%;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 :root {
-  --white: #F4E6E6;
+  --white: #f4e6e6;
+  --yellow: #ffb400;
 }
 
 .menu__hamburguer {
@@ -20,7 +21,7 @@ html {
 }
 
 .hero {
-  background-image: url('../img/hero.png');
+  background-image: url("../img/hero.png");
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
@@ -30,21 +31,32 @@ html {
   justify-content: center;
 }
 
-.hero __container {
+.hero__container {
   width: 90%;
   min-width: 320px;
   max-width: 900px;
   margin: 0 auto;
+  text-align: center;
 }
 
-
 .hero h1 {
-  font-size: 3.6rem;
+  font-size: 4.5rem;
   color: var(--white);
   margin-bottom: 25px;
+  text-align: center;
 }
 
 .hero p {
   color: var(--white);
   font-size: 2.4rem;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.hero__container a {
+  border: 3px solid var(--yellow);
+  padding: 10px 30px;
+  font-size: 1.5rem;
+  color: var(--white);
+  text-decoration: none;
 }
