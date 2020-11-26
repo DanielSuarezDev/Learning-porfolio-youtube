@@ -3,21 +3,58 @@
   margin: 0;
   box-sizing: border-box;
 }
-
+:root {
+  --white: #f4e6e6;
+  --yellow: #ffb400;
+}
 html {
   font-size: 62.5%;
   font-family: "Roboto", sans-serif;
 }
 
-:root {
-  --white: #f4e6e6;
-  --yellow: #ffb400;
+/*
+STYLES NAV
+*/
+nav{
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0,0,0,0.75);
+  transition: .5s;
+  width: 100%;
 }
+nav ul{
+  display: flex;
+  list-style: none;
+  justify-content: flex-end;
+  padding-right: 75px;
+}
+nav ul li{
+  margin: 30px 20px;
+}
+nav ul li a{
+  text-decoration: none;
+  font-size: 21px;
+  color: var(--white);
+  transition: 1s;
+  text-transform: uppercase;
+}
+nav ul li a:hover{
+  color: var(--yellow);
+  font-weight: 600;
+  transform: .5s;
+}
+.active{
+  border-bottom: 2px solid var(--yellow);
+  color: var(--yellow);
+}
+
 
 .menu__hamburguer {
   position: fixed;
   top: 15px;
   left: 10px;
+  display: none;
 }
 
 .hero {
@@ -32,7 +69,6 @@ html {
 }
 
 .hero__container {
-  width: 90%;
   min-width: 320px;
   max-width: 900px;
   margin: 0 auto;
@@ -60,3 +96,81 @@ html {
   color: var(--white);
   text-decoration: none;
 }
+
+/*
+ABOUT STYLES - START
+*/
+.container{
+  width: 90%;
+}
+.about{
+  margin: 0 auto;
+}
+.about__title h1{
+  font-size: 8vw;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 50px 0;
+}
+.about__title h1 span{
+  border-bottom: 4px solid var(--yellow);
+}
+.about__name{
+  display: flex;
+  flex-direction: row;
+}
+.about__name figure img{
+  border-radius: 50%;
+  height: 27vw;
+}
+.about__name .name__description{
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.name__description h2{
+  font-size: 7vw;
+}
+.name__description .country__description{
+  display: flex;
+  align-items: center;
+}
+.country__description img{
+  height: 5vw;
+}
+.country__description p{
+  margin-left: 7px;
+  font-size: 4vw;
+}
+.about__description{
+  margin-top: 30px;
+}
+.about__description p{
+  font-size: 4vw;
+  font-weight: 300;
+}
+.about__description .button__description{
+  margin: 50px 0;
+  text-align: right;
+}
+.boton{
+  border: 3px solid var(--yellow);
+  padding: 10px 30px;
+  font-size: 18px;
+  text-decoration: none;
+  color: var(--white);
+  background-color: var(--yellow);
+  font-weight: 900;
+  border-radius: 5px;
+}
+/*
+@media screen and (max-width: 1024px){
+  .menu__hamburguer{
+    display: block;
+  }
+  nav{
+    width: 275px;
+    min-height: 100vh;
+  }
+}*/
