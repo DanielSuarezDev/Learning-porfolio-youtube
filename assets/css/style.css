@@ -6,6 +6,7 @@
 :root {
   --white: #f4e6e6;
   --yellow: #ffb400;
+  --gray: #E1D9D9;
 }
 html {
   font-size: 62.5%;
@@ -28,6 +29,7 @@ nav ul{
   list-style: none;
   justify-content: flex-end;
   padding-right: 75px;
+  display: none;
 }
 nav ul li{
   margin: 30px 20px;
@@ -54,7 +56,6 @@ nav ul li a:hover{
   position: fixed;
   top: 15px;
   left: 10px;
-  display: none;
 }
 
 .hero {
@@ -102,17 +103,18 @@ ABOUT STYLES - START
 */
 .container{
   width: 90%;
+  margin: 0 auto;
 }
 .about{
   margin: 0 auto;
 }
-.about__title h1{
+h2{
   font-size: 8vw;
   text-transform: uppercase;
   text-align: center;
   margin: 50px 0;
 }
-.about__title h1 span{
+h2 span{
   border-bottom: 4px solid var(--yellow);
 }
 .about__name{
@@ -129,7 +131,7 @@ ABOUT STYLES - START
   flex-direction: column;
   justify-content: center;
 }
-.name__description h2{
+.name__description h3{
   font-size: 7vw;
 }
 .name__description .country__description{
@@ -152,7 +154,7 @@ ABOUT STYLES - START
 }
 .about__description .button__description{
   margin: 50px 0;
-  text-align: right;
+  text-align: center;
 }
 .boton{
   border: 3px solid var(--yellow);
@@ -163,6 +165,9 @@ ABOUT STYLES - START
   background-color: var(--yellow);
   font-weight: 900;
   border-radius: 5px;
+  display: block;
+  width: 60%;
+  margin-left: auto;
 }
 /*
 @media screen and (max-width: 1024px){
@@ -174,3 +179,29 @@ ABOUT STYLES - START
     min-height: 100vh;
   }
 }*/
+
+/* Mis habilidades */
+.contenedor__carga {
+  height: 1.4rem;
+  background-color: var(--gray);
+  border-radius: 2rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+.contenedor__carga--progreso {
+  height: 1.4rem;
+  background-color: var(--yellow);
+  border-radius: 2rem;
+}
+.habilidades__contenedor h3 {
+  font-size: 1.6rem;
+}
+.profesional {
+  width: 90%;
+}
+.intermedio {
+  width: 60%;
+}
+.basico {
+  width: 40%;
+}
