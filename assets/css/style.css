@@ -6,7 +6,7 @@
 :root {
   --white: #f4e6e6;
   --yellow: #ffb400;
-  --gray: #E1D9D9;
+  --gray: #e1d9d9;
 }
 html {
   font-size: 62.5%;
@@ -16,41 +16,40 @@ html {
 /*
 STYLES NAV
 */
-nav{
+nav {
   position: fixed;
   top: 0;
   left: 0;
-  background-color: rgba(0,0,0,0.75);
-  transition: .5s;
+  background-color: rgba(0, 0, 0, 0.75);
+  transition: 0.5s;
   width: 100%;
 }
-nav ul{
+nav ul {
   display: flex;
   list-style: none;
   justify-content: flex-end;
   padding-right: 75px;
   display: none;
 }
-nav ul li{
+nav ul li {
   margin: 30px 20px;
 }
-nav ul li a{
+nav ul li a {
   text-decoration: none;
   font-size: 21px;
   color: var(--white);
   transition: 1s;
   text-transform: uppercase;
 }
-nav ul li a:hover{
+nav ul li a:hover {
   color: var(--yellow);
   font-weight: 600;
-  transform: .5s;
+  transform: 0.5s;
 }
-.active{
+.active {
   border-bottom: 2px solid var(--yellow);
   color: var(--yellow);
 }
-
 
 .menu__hamburguer {
   position: fixed;
@@ -101,62 +100,62 @@ nav ul li a:hover{
 /*
 ABOUT STYLES - START
 */
-.container{
+.container {
   width: 90%;
   margin: 0 auto;
 }
-.about{
+.about {
   margin: 0 auto;
 }
-h2{
+h2 {
   font-size: 8vw;
   text-transform: uppercase;
   text-align: center;
   margin: 50px 0;
 }
-h2 span{
+h2 span {
   border-bottom: 4px solid var(--yellow);
 }
-.about__name{
+.about__name {
   display: flex;
   flex-direction: row;
 }
-.about__name figure img{
+.about__name figure img {
   border-radius: 50%;
   height: 27vw;
 }
-.about__name .name__description{
+.about__name .name__description {
   margin-left: 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-.name__description h3{
+.name__description h3 {
   font-size: 7vw;
 }
-.name__description .country__description{
+.name__description .country__description {
   display: flex;
   align-items: center;
 }
-.country__description img{
+.country__description img {
   height: 5vw;
 }
-.country__description p{
+.country__description p {
   margin-left: 7px;
   font-size: 4vw;
 }
-.about__description{
+.about__description {
   margin-top: 30px;
 }
-.about__description p{
+.about__description p {
   font-size: 4vw;
   font-weight: 300;
 }
-.about__description .button__description{
+.about__description .button__description {
   margin: 50px 0;
   text-align: center;
 }
-.boton{
+.boton {
   border: 3px solid var(--yellow);
   padding: 10px 30px;
   font-size: 18px;
@@ -204,4 +203,46 @@ h2 span{
 }
 .basico {
   width: 40%;
+}
+/* Seccion de mis prpoyectos */
+.project {
+  display: flex;
+  overflow-x: scroll;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x proximity;
+}
+.project__card {
+  scroll-snap-align: center;
+  min-width: 330px;
+  max-width: 500px;
+  background: #e1d9d9;
+  text-align: center;
+  padding: 15px;
+  border-radius: 10px;
+  margin: 0 10px;
+}
+.project__card-img img {
+  width: 120px;
+  height: 120px;
+}
+.project__card-text h3 {
+  font-size: 2.4rem;
+  margin: 13px 0;
+}
+.project__card-text p {
+  font-size: 1.5rem;
+  margin: 20px 0;
+  text-align: left;
+}
+.project__card-text a {
+  border: 2px solid #ffb400;
+  display: block;
+  text-decoration: none;
+  color: #000;
+  width: 50%;
+  margin: 0 auto;
+  padding: 10px 0;
+  font-size: 1.5rem;
+  font-weight: bold;
+  border-radius: 8px;
 }
